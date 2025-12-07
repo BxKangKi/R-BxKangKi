@@ -1,9 +1,10 @@
-#' @name rstudio.setcwd
-#' @title rstudio.setcwd
+#' @name setcwd
+#' @title setcwd
+#' @description
+#' Set 'current' working directory. "rstudioapi" required.
 #' @export
-rstudio.setcwd = function() {
+setcwd = function() {
   library(rstudioapi)
   script_dir = dirname(rstudioapi::getActiveDocumentContext()$path)
   setwd(script_dir)
 }
-

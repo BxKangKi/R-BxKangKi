@@ -4,7 +4,7 @@
 \alias{print.summary}
 \title{print.summary}
 \usage{
-\method{print}{summary}(x)
+\method{print}{summary}(x, title = "")
 }
 \arguments{
 \item{x}{Value}
