@@ -6,7 +6,7 @@
 #' @description
 #' Print summary and data length, mean, variance, standard deviation, and CV
 #' @export
-print.summary = function(x, title = "") {
+print.summary = function(x, matrix=FALSE, title = "") {
   cat(title)
   print(summary(x))
   v = var(x)
@@ -21,11 +21,11 @@ print.summary = function(x, title = "") {
   print(sqrt(v))
   cat("CV\n")
   print(cv(x))
-  if (all(dim(x) > 2)) {
+  print(plot(x))
+  if (matrix) {
     cat("correlation\n")
     print(cor(x))
     cat("covariance\n")
     print(cov(x))
-    print.plot(x)
   }
 }

@@ -8,3 +8,14 @@ setcwd = function() {
   script_dir = dirname(rstudioapi::getActiveDocumentContext()$path)
   setwd(script_dir)
 }
+
+
+#' @name clear
+#' @title clear
+#' @description
+#' Clear unnecessary data and garbage collect.
+#' @export
+clear = function() {
+  rm(list = ls())
+  gc()
+}

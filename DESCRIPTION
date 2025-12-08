@@ -1,17 +1,16 @@
 Package: bxkangki
 Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1.0
+Title: BxKangKi R Package
+Version: 0.1.1
 Authors@R: c(
     person(
-      "Jane", "Doe",
-      email = "jane@example.com",
+      "Kiyeon", "Kang",
+      email = "kngky078@snu.ac.kr",
       role = c("aut", "cre")
     )
   )
-Description: More about what it does (maybe more than one line).
-    Continuation lines should be indented.
-License: What license is it under?
+Description: Personal R Package
+License: MIT
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.3.3

@@ -4,7 +4,7 @@
 \alias{print.summary}
 \title{print.summary}
 \usage{
-\method{print}{summary}(x, title = "")
+\method{print}{summary}(x, matrix = FALSE, title = "")
 }
 \arguments{
 \item{x}{Value}
